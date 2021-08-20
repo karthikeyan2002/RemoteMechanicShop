@@ -1,98 +1,120 @@
-body{
+body {
     background-color: rebeccapurple;
     color: white;
     margin: 0px;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     background-color: rebeccapurple;
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: center;
-    
 }
-.nav-item{
+
+.nav-item {
     color: #fff;
     text-decoration: none;
     margin: 0em 5em;
 }
-.Header{
+
+.Header {
     display: flex;
+    flex-wrap: wrap;
     padding: 1%;
 }
-.Heading-Name{
+
+.Heading-Name {
     flex: 1;
     margin-left: 5rem;
     margin-top: 3rem;
     font-size: 1.5rem;
 }
-.bike-img-container{
+
+.bike-img-container {
     flex: 1;
     text-align: right;
     margin-top: 4rem;
     margin-right: 15rem;
 }
-.bike-img-container img{
+
+.bike-img-container img {
     animation-name: bike;
-    animation-duration: 5s; 
+    animation-duration: 5s;
 }
-.Testimonial{
+
+.Testimonial {
     background-color: #f2f2e9;
     color: #000;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 3em;
     padding: 2%;
-      
 }
-.Testimonial .user{
+
+.Testimonial .user {
     padding: 2%;
     text-align: center;
     flex: 1;
 }
-.Testimonial img{
+
+.Testimonial img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
-.Testimonial p{
+
+.Testimonial p {
     font-size: 1.2em;
     font-weight: bold;
 }
-.Testimonial span{
+
+.Testimonial span {
     color: green;
 }
-.Testimonial img{
+
+.Testimonial img {
     animation-name: bike;
-    animation-duration: 5s; 
+    animation-duration: 5s;
 }
-.About{
+
+.About {
     padding: 4%;
     display: flex;
+    flex-wrap: wrap;
 }
-.contenet{
+
+.contenet {
     flex: 1;
 }
-.mech-img{
+
+.mech-img {
     flex: 1;
     text-align: center;
 }
-.mech-img img{
+
+.mech-img img {
     width: 400px;
     height: 400px;
 }
+
 @keyframes bike {
-    0%{transform: scale(.5);}
-    100%{}
+    0% {
+        transform: scale(.5);
+    }
+    100% {}
 }
-.footer{
+
+.footer {
     background-color: #f2f2e9;
     color: #000;
     text-align: center;
     padding: 4%;
 }
-.btn-1{
+
+.btn-1 {
     background-color: #121212;
     color: #fff;
     font-weight: bold;
@@ -102,7 +124,8 @@ body{
     border-radius: 5%;
     margin: 2%;
 }
-.btn-2{
+
+.btn-2 {
     background-color: #fff;
     color: #121212;
     font-weight: bold;
@@ -111,4 +134,43 @@ body{
     padding: 10px 20px;
     border-radius: 5%;
     margin: 2%;
+}
+
+
+/* Media queris */
+
+@media only screen and (max-width: 1000px) {
+    .bike-img-container {
+        margin-right: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bike-img-container {
+        margin-right: .5rem;
+    }
+}
+
+@media only screen and (max-width: 658px) {
+    .nav-item {
+        margin: 0em 2em;
+    }
+    .Heading-Name {
+        margin-left: 2em;
+    }
+    .mech-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 506px) {
+    .bike-img-container {
+        margin-right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 378px) {
+    .nav-item {
+        margin: 0em 1em;
+    }
 }
